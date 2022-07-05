@@ -1,0 +1,48 @@
+.Checkout {
+  padding: 7rem 0 3rem;
+  @include flex(row, space-between, flex-start);
+  gap: 5rem;
+  &__details {
+    flex-grow: 1;
+  }
+  &__empty {
+    border-radius: 5px;
+    background-color: $color-white;
+    color: $color-primary;
+    padding: 3rem 3rem 9rem;
+    height: 100%;
+  }
+
+  &__summary {
+    background-color: $color-white;
+    border-radius: 5px;
+    padding: 3rem;
+    flex-basis: 27.5%;
+  }
+
+  &__heading {
+    color: $color-primary;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $color-grey-dark;
+  }
+
+  &__total-price {
+    margin-top: 2rem;
+    @include flex(row, space-between, flex-start);
+  }
+
+  &__title {
+    font-size: 1.6rem;
+  }
+
+  &__price {
+    color: $color-primary;
+    font-size: 1.8rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

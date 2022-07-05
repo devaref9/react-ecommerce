@@ -1,0 +1,18 @@
+.NavBar {
+  @include flex(row, space-between, center);
+  padding-bottom: 1rem;
+  &__menu {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
+
+  &__link {
+    color: $color-black;
+    transition: 0.3s;
+  }
+
+  &__link:hover {
+    color: $color-primary;
+  }
+}

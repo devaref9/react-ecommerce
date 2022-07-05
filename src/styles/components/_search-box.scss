@@ -1,0 +1,38 @@
+.SearchBox {
+  flex-basis: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border: 2px solid $color-grey-dark;
+  border-radius: 50px;
+
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  &__submit {
+    background: transparent;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    @include flex(row, center, center);
+    cursor: pointer;
+  }
+
+  &__submit > svg {
+    font-size: 1.7rem;
+    color: $color-grey-text;
+  }
+
+  &__filter {
+    padding: 1rem;
+    margin-right: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: $color-grey-text;
+    background-color: transparent;
+    text-align: center;
+  }
+}

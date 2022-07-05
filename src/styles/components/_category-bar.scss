@@ -1,0 +1,15 @@
+.CategoryBar {
+  &__heading {
+    display: flex;
+    background-color: $color-grey-light;
+    padding: .5rem 3rem;
+  }
+
+  &__angle {
+    @include flex(row, center, center);
+  }
+
+  &__list {
+    display: none;
+  }
+}

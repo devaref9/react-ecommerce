@@ -1,0 +1,30 @@
+// import Fonts
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Poppins:wght@300;400;500;700&display=swap");
+// import Abstracts
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/mixins";
+@import "./styles/abstracts/utils";
+
+// import Base
+@import "./styles/base/reset";
+@import "./styles/base/typography";
+
+// import Components
+@import "./styles/components/header";
+@import "./styles/components/top-search";
+@import "./styles/components/search-box";
+@import "./styles/components/nav-bar";
+@import "./styles/components/category-bar";
+@import "./styles/components/flash";
+@import "./styles/components/product-card";
+@import "./styles/components/category-card";
+@import "./styles/components/top-category";
+@import "./styles/components/button";
+@import "./styles/components/shop";
+@import "./styles/components/brands-category";
+@import "./styles/components/view-all";
+@import "./styles/components/checkout-card";
+
+// import Pages
+@import "./styles/pages/home";
+@import "./styles/pages/checkout";

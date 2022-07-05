@@ -1,0 +1,93 @@
+.ProductCard {
+  background-color: $color-white;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.1);
+  padding: 2rem;
+  position: relative;
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__discount {
+    background-color: $color-primary;
+    border-radius: 50px;
+    color: $color-white;
+    font-size: 1.2rem;
+    left: 1rem;
+    padding: 0.3rem 1rem;
+    position: absolute;
+    top: 1rem;
+  }
+
+  &__rating {
+    display: flex;
+    gap: 2px;
+  }
+
+  &__rating svg {
+    font-size: 1.7rem;
+  }
+
+  &__price {
+    color: $color-primary;
+  }
+
+  &__add-to-favourite {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  &__add-to-favourite svg {
+    font-size: 2rem;
+  }
+
+  &__add-to-cart {
+    border-radius: 5px;
+    border: 3px solid $color-grey-dark;
+    bottom: 2rem;
+    color: $color-primary;
+    display: flex;
+    gap: 1.2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    position: absolute;
+    right: 2rem;
+  }
+
+  &__add-to-cart svg {
+    color: $color-primary;
+    font-size: 1.6rem;
+    transition: 0.3s;
+  }
+
+  &__add-to-cart svg:hover {
+    color: darken($color-primary, 10);
+  }
+
+  &__add-to-cart > button {
+    @include flex(row, center, center);
+  }
+
+  &__count {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  &__add-button {
+    background: $color-primary !important;
+    border-radius: 5px;
+    bottom: 2rem;
+    color: $color-white;
+    padding: 1rem;
+    position: absolute;
+    right: 2rem;
+    transition: .3s;
+  }
+
+  &__add-button:hover {
+    background: darken($color-primary, 5) !important;
+  }
+}

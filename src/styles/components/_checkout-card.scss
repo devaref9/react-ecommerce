@@ -1,0 +1,64 @@
+.CheckoutCard {
+  background-color: orangered;
+  border-radius: 5px;
+  background-color: $color-white;
+  padding: 2rem;
+
+  @include flex(row, space-between, flex-start);
+
+  &__content {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__img {
+    height: 150px;
+  }
+
+  &__desc {
+    @include flex(column, space-between, flex-start);
+  }
+
+  &__details {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  &__count {
+    color: $color-grey-text;
+  }
+
+  &__total {
+    color: $color-primary;
+    font-weight: 600;
+  }
+
+  &__buttons {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttons svg {
+    font-size: 1.8rem;
+    color: $color-primary;
+  }
+
+  &__number-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__increase,
+  &__decrease {
+    display: flex;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 2px solid $color-grey-dark;
+    color: $color-primary;
+  }
+}

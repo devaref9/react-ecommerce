@@ -1,0 +1,72 @@
+.Flash {
+  position: relative;
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    display: flex;
+  }
+
+  &__icon svg {
+    color: $color-primary;
+    font-size: 2rem;
+  }
+
+  .swiper {
+    position: initial;
+  }
+
+  .swiper-button-prev {
+    background-color: $color-accent;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+    transition: 0.3s;
+  }
+  .swiper-button-next {
+    background-color: $color-accent;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: translateX(50%);
+    right: 0;
+    transition: 0.3s;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: $color-primary;
+  }
+
+  .swiper-button-prev:after {
+    -webkit-mask: url(../../../public/assets/icons/arrow-left-long-solid.svg)
+      no-repeat 50% 50%;
+    mask: url(../../../public/assets/icons/arrow-left-long-solid.svg) no-repeat
+      50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $color-white;
+  }
+
+  .swiper-button-next:after {
+    -webkit-mask: url(../../../public/assets/icons/arrow-right-long-solid.svg)
+      no-repeat 50% 50%;
+    mask: url(../../../public/assets/icons/arrow-right-long-solid.svg) no-repeat
+      50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $color-white;
+  }
+}
