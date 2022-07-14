@@ -20,14 +20,14 @@ const CheckoutCard = () => {
         </div>
       </div>
       <div className="CheckoutCard__buttons">
-        <Button className="CheckoutCard__remove">
+        <Button>
           <FaRegTrashAlt />
         </Button>
         <div className="CheckoutCard__number-icons">
-          <Button className="CheckoutCard__increase">
+          <Button>
             <FaPlus />
           </Button>
-          <Button className="CheckoutCard__decrease">
+          <Button>
             <FaMinus />
           </Button>
         </div>

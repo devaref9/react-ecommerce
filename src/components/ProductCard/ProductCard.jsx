@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import Button from "../Button/Button";
 
-const ProductCard = () => {
+const ProductCard = ({ price, title }) => {
   const [canRemove, setCanRemove] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
 
@@ -16,7 +16,7 @@ const ProductCard = () => {
     <div className="ProductCard">
       <img src="/assets/flash-3.png" alt="" />
       <div className="ProductCard__desc">
-        <h4 className="ProductCard__name">Phone</h4>
+        <h4 className="ProductCard__name">{title}</h4>
         <div className="ProductCard__rating">
           <FaRegStar />
           <FaRegStar />
@@ -24,7 +24,7 @@ const ProductCard = () => {
           <FaRegStar />
           <FaRegStar />
         </div>
-        <h4 className="ProductCard__price">$100.00</h4>
+        <h4 className="ProductCard__price">${price}</h4>
 
         <span className="ProductCard__discount">50% off</span>
         <span className="ProductCard__add-to-favourite">
@@ -34,22 +34,22 @@ const ProductCard = () => {
           <div className="ProductCard__add-to-cart">
             <>
               {canRemove ? (
-                <Button className="ProductCard__remove-icon">
+                <Button>
                   <FaTrash />
                 </Button>
               ) : (
-                <Button className="ProductCard__decrease-icon">
+                <Button>
                   <FaMinus />
                 </Button>
               )}
               <span className="ProductCard__count">0</span>
-              <Button className="ProductCard__increase-icon">
+              <Button>
                 <FaPlus />
               </Button>
             </>
           </div>
         ) : (
-          <Button className="ProductCard__add-button">Add To cart</Button>
+          <Button buttonType="add">Add To cart</Button>
         )}
       </div>
     </div>

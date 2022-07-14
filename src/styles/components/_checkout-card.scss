@@ -46,6 +46,11 @@
   &__buttons svg {
     font-size: 1.8rem;
     color: $color-primary;
+    transition: 0.3s;
+  }
+
+  &__buttons svg:hover {
+    color: darken($color-primary, 5);
   }
 
   &__number-icons {

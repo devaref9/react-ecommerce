@@ -1,0 +1,17 @@
+.SignInForm {
+  &__heading {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  &__form > div:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+}

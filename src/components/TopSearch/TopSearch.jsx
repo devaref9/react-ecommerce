@@ -12,7 +12,7 @@ const TopSearch = () => {
       </Link>
       <SearchBox />
       <div className="TopSearch__user">
-        <Link className="TopSearch__profile circle-icon" to="/">
+        <Link className="TopSearch__profile circle-icon" to="/auth">
           <FaUserAlt />
         </Link>
         <Link className="TopSearch__checkout circle-icon" to="/checkout">

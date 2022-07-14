@@ -11,6 +11,12 @@
     gap: 5px;
   }
 
+  &__name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
   &__discount {
     background-color: $color-primary;
     border-radius: 50px;
@@ -46,7 +52,7 @@
   }
 
   &__add-to-cart {
-    border-radius: 5px;
+    border-radius: $border-radius;
     border: 3px solid $color-grey-dark;
     bottom: 2rem;
     color: $color-primary;
@@ -74,20 +80,5 @@
   &__count {
     font-size: 1.8rem;
     font-weight: 500;
-  }
-
-  &__add-button {
-    background: $color-primary !important;
-    border-radius: 5px;
-    bottom: 2rem;
-    color: $color-white;
-    padding: 1rem;
-    position: absolute;
-    right: 2rem;
-    transition: .3s;
-  }
-
-  &__add-button:hover {
-    background: darken($color-primary, 5) !important;
   }
 }
