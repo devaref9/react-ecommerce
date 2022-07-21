@@ -13,8 +13,8 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link className="NavBar__link" to="/">
-            Pages
+          <Link className="NavBar__link" to="/products">
+            Products
           </Link>
         </li>
         <li>

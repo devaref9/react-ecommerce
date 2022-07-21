@@ -1,0 +1,8 @@
+.Products {
+    padding: 5rem 0;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4rem;
+  }
+}

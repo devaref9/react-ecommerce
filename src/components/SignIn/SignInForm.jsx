@@ -19,8 +19,6 @@ const SignInForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setFormFields(formDefaultInputs);
-    console.log("Form Submitted!");
   };
   return (
     <div className="SignInForm">
@@ -35,6 +33,7 @@ const SignInForm = () => {
           onChange={handleChange}
           name="email"
           value={email}
+          required
         />
         <FormInput
           label="Password"
@@ -42,6 +41,7 @@ const SignInForm = () => {
           onChange={handleChange}
           name="password"
           value={password}
+          required
         />
         <Button buttonType="sign-up" type="submit">
           Sign in

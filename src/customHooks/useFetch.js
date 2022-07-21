@@ -13,6 +13,7 @@ function useFetch(url) {
       setLoading(false);
     };
     loadPost();
+
   }, [url]);
 
   return { data, loading };

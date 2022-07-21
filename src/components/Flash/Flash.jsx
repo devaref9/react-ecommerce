@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import useFetch from "../../customHooks/useFetch";
 import { AiFillThunderbolt } from "react-icons/ai";
 import ProductCard from "../ProductCard/ProductCard";
@@ -10,21 +9,6 @@ import "swiper/scss/navigation";
 import { Navigation } from "swiper";
 
 const Flash = () => {
-  // const [data, setData] = useState(null);
-  // const [loading, setLoading] = useState(null);
-
-  // useEffect(() => {
-  //   const loadPost = async () => {
-  //     setLoading(true);
-  //     const response = await fetch(
-  //       "https://api.storerestapi.com/products?limit=8&page=1"
-  //     );
-  //     const json = await response.json();
-  //     setData(json.data);
-  //     setLoading(false);
-  //   };
-  //   loadPost();
-  // }, []);
 
   const { data, loading } = useFetch(
     "https://api.storerestapi.com/products?limit=8&page=1"
